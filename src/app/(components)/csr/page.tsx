@@ -3,16 +3,16 @@ import React, { useEffect, useState } from 'react';
 
 const CSR = () => {
 	const [fact, setFact] = useState('');
-	const [loading, setLoading] = useState('');
+	const [length, setLength] = useState('');
 
 	useEffect(() => {
 		const fetchData = async () => {
 			const response = await fetch('https://catfact.ninja/fact');
-			const { fact, loading } = await response.json();
+			const { fact, length } = await response.json();
 			setFact(fact);
 
-			setLoading(loading);
-			console.log(fact, loading);
+			setLength(length);
+			console.log(fact, length);
 		};
 		fetchData();
 	}, []);
@@ -21,7 +21,7 @@ const CSR = () => {
 		<div>
 			<h1>CSR page</h1>
 			<div>CSR fact: {fact}</div>
-			<div>CSR loading: {loading}</div>
+			<div>CSR length: {length}</div>
 		</div>
 	);
 };

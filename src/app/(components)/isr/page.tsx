@@ -6,13 +6,13 @@ const ISR = async () => {
 			revalidate: 5,
 		},
 	});
-	const { fact, length } = await response.json();
+	const { fact, loading } = await response.json();
 
 	return (
 		<div>
 			<h3>ISR 페이지!</h3>
 			<p>ISR fact : {fact}</p>
-			<p>ISR length : {length}</p>
+			<p>ISR length : {loading}</p>
 		</div>
 	);
 };
