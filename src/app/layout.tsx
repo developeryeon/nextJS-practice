@@ -18,19 +18,27 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<nav>
-					<ul>
+				<nav className="bg-gray-900 p-4 flex justify-start items-center">
+					<ul className="flex space-x-5 text-white">
 						<li>
-							<Link href={'/csr'}>CSR</Link>
+							<Link href={'/csr'}>
+								<p className="cursor-pointer hover:text-gray-300">CSR</p>
+							</Link>
 						</li>
 						<li>
-							<Link href={'/isr'}>ISR</Link>
+							<Link href={'/isr'}>
+								<p className="cursor-pointer hover:text-gray-300">ISR</p>
+							</Link>
 						</li>
 						<li>
-							<Link href={'/ssg'}>SSG</Link>
+							<Link href={'/ssg'}>
+								<p className="cursor-pointer hover:text-gray-300">SSG</p>
+							</Link>
 						</li>
 						<li>
-							<Link href={'/ssr'}>SSR</Link>
+							<Link href={'/ssr'}>
+								<p className="cursor-pointer hover:text-gray-300">SSR</p>
+							</Link>
 						</li>
 					</ul>
 				</nav>

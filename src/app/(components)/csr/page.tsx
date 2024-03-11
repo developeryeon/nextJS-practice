@@ -18,10 +18,12 @@ const CSR = () => {
 	}, []);
 
 	return (
-		<div>
-			<h1>CSR page</h1>
-			<div>CSR fact: {fact}</div>
-			<div>CSR length: {length}</div>
+		<div className="mx-auto max-w-lg p-8 bg-white shadow-md rounded-lg">
+			<h1 className="text-3xl font-bold mb-4">CSR page</h1>
+			<div className="mb-4">
+				<p className="text-gray-700">CSR fact: {fact}</p>
+			</div>
+			<div className="text-gray-700">CSR length: {length}</div>
 		</div>
 	);
 };
